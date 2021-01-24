@@ -415,10 +415,15 @@ footer {
     }     
     .copyright-grid {
         grid-template-columns: 1fr;
-        align-self:center ;
+    
     }
-    .copytext .cradis {
+    .copytext,.cradis {
         font-size: .8rem;
+        justify-self: center;
+
     }
+
+    
+    
 
 }
