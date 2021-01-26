@@ -3,13 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/********************* hemburger ********************/
+.hemburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:#ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
 .container {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
 
 }
+.open {
+    height:auto !important ;
+}
+
 /********************* Header ********************/
 header {
     width: 100%;
@@ -328,18 +356,170 @@ footer {
 .cradis {
     justify-self: flex-end;
     align-self:center ;
+}
 
+
+@media only screen and (max-width:800px) {
+    header {
+    height: auto;
+}
+.nav-grid {
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+ul.menu {
+    height: 2.5rem;
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-bottom: 5px;
+
+}
+.ul menu li {
+    height: 2.5rem;
+
+}
+
+.content-heading {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.content-services-grid {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.content-services-items {
+    width: 95%;
+}
+.content-meet {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.content-teams-grid {
+    grid-template-columns: 1fr 1fr;       
+    
+}
+.content-teams-item {
+    width: 95%;
+    justify-self: center;
+}
+footer{
+    height: auto;
+}
+.footer-grid {
+    grid-template-columns: 1fr 1fr ;
+}
+.footer-items {
+    justify-self: center;
+    margin-left: 10px ;
+    text-align: center;
+      
+}
+.copyright {
+    height: auto;
+    padding: 1rem 0;
+
+}     
+.copyright-grid {
+    grid-template-columns: 1fr;
+
+}
+.copytext,.cradis {
+    font-size: .8rem;
+    justify-self: center;
 
 }
 
 
+}
+
+@media only screen and (max-width:780px) {
+        header {
+        height: auto;
+    }
+    .nav-grid {
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    ul.menu {
+        height: 2.5rem;
+        grid-template-columns: 1fr;
+        height: auto;
+        margin-bottom: 5px;
+
+    }
+    .ul menu li {
+        height: 2.5rem;
+
+    }
+
+    .content-heading {
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .content-services-grid {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .content-services-items {
+        width: 95%;
+    }
+    .content-meet {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .content-teams-grid {
+        grid-template-columns: 1fr 1fr;       
+        
+    }
+    .content-teams-item {
+        width: 95%;
+        justify-self: center;
+    }
+    footer{
+        height: auto;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr ;
+    }
+    .footer-items {
+        justify-self: center;
+        margin-left: 10px ;
+        text-align: center;
+          
+    }
+    .copyright {
+        height: auto;
+        padding: 1rem 0;
+
+    }     
+    .copyright-grid {
+        grid-template-columns: 1fr;
+    
+    }
+    .copytext,.cradis {
+        font-size: .8rem;
+        justify-self: center;
+
+    }
+
+
+}
+
 @media only screen and (max-width:480px) {
+
+    .hemburger {
+        display: inline-block;
+        margin:  1rem;
+    }
     header {
         height: auto;
     }
     .nav-grid {
         text-align: center;
         grid-template-columns: 1fr;
+        height: 0;
     }
     ul.menu {
         height: 2.5rem;
@@ -423,7 +603,6 @@ footer {
 
     }
 
-    
     
 
 }
