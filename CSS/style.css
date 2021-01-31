@@ -526,6 +526,8 @@ footer{
         grid-template-columns: 1fr;
         height: auto;
         margin-bottom: 5px;
+        list-style-type: none;
+   
 
     }
     .ul menu li {
